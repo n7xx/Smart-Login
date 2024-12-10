@@ -1,0 +1,65 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+.color-custom {
+  color: #a200ff;
+}
+
+.navbar-brand {
+  color: #a200ff !important;
+  font-weight: bold;
+}
+
+.btn-custom {
+  background-color: #6a2195;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.btn-custom:hover {
+  background-color: #671497;
+  color: #ffffff;
+}
+
+.card {
+  background-color: #2e2e2e;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(116, 0, 178, 0.556);
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  animation: boxShadow 3s linear infinite;
+}
+
+@keyframes boxShadow {
+  0% {
+    box-shadow: 0px 10px 50px rgba(116, 0, 178, 0.556);
+  }
+  50% {
+    box-shadow: 0px 0px 0px rgba(116, 0, 178, 0.556);
+  }
+  100% {
+    box-shadow: 0px 10px 50px rgba(116, 0, 178, 0.556);
+  }
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #a200ff;
+  text-align: center;
+}
+
+input {
+  border-radius: 8px;
+}
+input[placeholder] {
+    font-size: 14px;
+}
+
