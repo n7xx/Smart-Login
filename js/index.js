@@ -191,8 +191,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const signupNameInput = document.getElementById("signupInpName");
   const signupEmailInput = document.getElementById("signupInpEmail");
   const signupPasswordInput = document.getElementById("signupInpPass");
-  const signupBtn = document.getElementById("signupBtn");
 
+  const signupBtn = document.getElementById("signupBtn");
+  signupNameInput?.addEventListener("input", (e) => {
+    const isValid = Validation.validateInput(e.target, "name");
+    Validation.toggleValidationClass(e.target, isValid);
+  });
+
+  signupEmailInput?.addEventListener("input", (e) => {
+    const isValid = Validation.validateInput(e.target, "email");
+    Validation.toggleValidationClass(e.target, isValid);
+  });
+
+  signupPasswordInput?.addEventListener("input", (e) => {
+    const isValid = Validation.validateInput(e.target, "password");
+    Validation.toggleValidationClass(e.target, isValid);
+  });
+  
   if (signupBtn) {
     signupBtn.addEventListener("click", (e) => {
       e.preventDefault();
@@ -200,20 +215,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const email = signupEmailInput.value.trim();
       const password = signupPasswordInput.value;
 
-      signupNameInput.addEventListener("input", (e) => {
-        const isValid = Validation.validateInput(e.target, "name");
-        Validation.toggleValidationClass(e.target, isValid);
-      });
-
-      signupEmailInput.addEventListener("input", (e) => {
-        const isValid = Validation.validateInput(e.target, "email");
-        Validation.toggleValidationClass(e.target, isValid);
-      });
-
-      signupPasswordInput.addEventListener("input", (e) => {
-        const isValid = Validation.validateInput(e.target, "password");
-        Validation.toggleValidationClass(e.target, isValid);
-      });
       signupNameInput.classList.remove("is-invalid");
       signupEmailInput.classList.remove("is-invalid");
       signupPasswordInput.classList.remove("is-invalid");
