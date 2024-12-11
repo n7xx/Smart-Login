@@ -30,12 +30,12 @@ A comprehensive client-side authentication system built with pure JavaScript, fe
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/authentication-project.git
+git clone https://github.com/n7xx/Smart-Login.git
 ```
 
 ### 2. Project Structure
 ```
-authentication-project/
+Smart-Login/
 │
 ├── index.html         # Login Page
 ├── signup.html        # Signup Page
@@ -45,7 +45,7 @@ authentication-project/
 │   └── styles.css     # Custom Styles
 │
 └── js/
-    └── script.js      # Main JavaScript File
+    └── index.js      # Main JavaScript File
 ```
 
 ### 3. Dependencies
