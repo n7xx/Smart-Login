@@ -200,17 +200,17 @@ document.addEventListener("DOMContentLoaded", () => {
       const email = signupEmailInput.value.trim();
       const password = signupPasswordInput.value;
 
-      signupNameInput.addEventListener("input", (e) => {
+      signupNameInput?.addEventListener("input", (e) => {
         const isValid = Validation.validateInput(e.target, "name");
         Validation.toggleValidationClass(e.target, isValid);
       });
 
-      signupEmailInput.addEventListener("input", (e) => {
+      signupEmailInput?.addEventListener("input", (e) => {
         const isValid = Validation.validateInput(e.target, "email");
         Validation.toggleValidationClass(e.target, isValid);
       });
 
-      signupPasswordInput.addEventListener("input", (e) => {
+      signupPasswordInput?.addEventListener("input", (e) => {
         const isValid = Validation.validateInput(e.target, "password");
         Validation.toggleValidationClass(e.target, isValid);
       });
