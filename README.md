@@ -80,5 +80,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 📞 Contact
 Nashaat Fathy - nashaatfathy878@gmail.com
 
-Project Link: [https://github.com/n7xx/Smart-Login]
-Project DEMO: [https://n7xx.github.io/Smart-Login]
+Project Link: https://github.com/n7xx/Smart-Login/
+Project DEMO: https://n7xx.github.io/Smart-Login/
