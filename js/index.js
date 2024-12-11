@@ -127,11 +127,6 @@ document.addEventListener("DOMContentLoaded", () => {
     Validation.toggleValidationClass(e.target, isValid);
   });
 
-  passwordInput?.addEventListener("input", (e) => {
-    const isValid = Validation.validateInput(e.target, "password");
-    Validation.toggleValidationClass(e.target, isValid);
-  });
-
   if (loginBtn) {
     loginBtn.addEventListener("click", (e) => {
       e.preventDefault();
